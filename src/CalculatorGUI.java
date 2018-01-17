@@ -1,5 +1,5 @@
 import java.awt.*;
-        import java.awt.event.*;
+import java.awt.event.*;
 
 //Class providing calculator panel, buttons and text field
 public class CalculatorGUI {
