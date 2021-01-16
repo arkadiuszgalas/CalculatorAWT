@@ -1,3 +1,5 @@
+package model;
+
 public class Calculator {
 
     private static final char NO_OP = '\0';

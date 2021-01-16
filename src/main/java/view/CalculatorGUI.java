@@ -1,5 +1,8 @@
+package view;
+
 import java.awt.*;
 import java.awt.event.*;
+import model.Calculator;
 
 //Class providing calculator panel, buttons and text field
 public class CalculatorGUI {
@@ -129,12 +132,12 @@ public class CalculatorGUI {
         public void windowClosing(WindowEvent e) {
             System.exit(0);
         }
-        public void windowActivated(WindowEvent e) {};
-        public void windowDeactivated(WindowEvent e) {};
-        public void windowIconified(WindowEvent e) {};
-        public void windowDeiconified(WindowEvent e) {};
-        public void windowClosed(WindowEvent e) {};
-        public void windowOpened(WindowEvent e) {};
+        public void windowActivated(WindowEvent e) {}
+        public void windowDeactivated(WindowEvent e) {}
+        public void windowIconified(WindowEvent e) {}
+        public void windowDeiconified(WindowEvent e) {}
+        public void windowClosed(WindowEvent e) {}
+        public void windowOpened(WindowEvent e) {}
     }
 
     public static void main(String[] args) {
