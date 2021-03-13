@@ -6,11 +6,11 @@ import model.Calculator;
 
 //Class providing calculator panel, buttons and text field
 public class CalculatorGUI {
-    private Frame f;
-    private Panel p1;
-    private Label answer;
-    private Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16;
-    private Calculator calculator;
+    private final Frame f;
+    //private Panel p1;
+    private final Label answer;
+    private final Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16;
+    private final Calculator calculator;
     private boolean readyForNextNumber;
 
     public CalculatorGUI() {
@@ -39,6 +39,7 @@ public class CalculatorGUI {
 
     public void launchFrame() {
         //Setting the View
+        Panel p1;
         p1 = new Panel();
 
         p1.setLayout(new GridLayout(4,4));
@@ -128,7 +129,7 @@ public class CalculatorGUI {
         }
     }
 
-    private class CloseWidgetHandler implements WindowListener {
+    private static class CloseWidgetHandler implements WindowListener {
         public void windowClosing(WindowEvent e) {
             System.exit(0);
         }
@@ -138,10 +139,5 @@ public class CalculatorGUI {
         public void windowDeiconified(WindowEvent e) {}
         public void windowClosed(WindowEvent e) {}
         public void windowOpened(WindowEvent e) {}
-    }
-
-    public static void main(String[] args) {
-        CalculatorGUI guiCalc = new CalculatorGUI();
-        guiCalc.launchFrame();
     }
 }
